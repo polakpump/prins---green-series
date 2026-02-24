@@ -3,109 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interplast PRINS - קבוצת פולק</title>
+    <title>PRINS - צנרת PPR מבודדת לבנייה ירוקה | קבוצת פולק</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        'engineering-blue': '#1e3a8a',
+                        'tech-gray': '#f3f4f6',
+                        'eco-green': '#16a34a',
+                        'pipe-green': '#009e60',
+                        'alert-orange': '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Assistant', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        body {
+            font-family: 'Heebo', sans-serif;
+            text-align: right;
+            scroll-behavior: smooth;
+        }
+        /* Styling for specific engineering aesthetics */
+        .tech-border {
+            border-right: 4px solid #16a34a;
+        }
+        .cert-icon {
+            width: 48px;
+            height: 48px;
+            stroke-width: 1.5;
+        }
     </style>
 </head>
-<body class="gradient-bg min-h-screen text-gray-800">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-blue-100">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-900">קבוצת פולק</div>
-            <div class="text-green-600 font-bold">Interplast GREEN SERIES</div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="font-bold text-2xl text-engineering-blue tracking-tight">קבוצת פולק</div>
+                <div class="h-6 w-px bg-gray-300"></div>
+                <div class="font-semibold text-xl text-gray-600">INTERPLAST</div>
+            </div>
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-engineering-blue hover:bg-blue-800 text-white px-6 py-2 rounded font-medium transition-colors">
+                    לתיאום פגישה מקצועית
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
+    <section class="bg-engineering-blue text-white py-16 lg:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAzNHYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMnYtNGg0VjJoLTR6bS0xOCAxMnYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMnYtNGg0VjJoLTR6IiBmaWxsPSIjZmZmZmZmIiBmaWxsLW9wYWNpdHk9IjAuNCIvPjwvZz48L3N2Zz4=')]"></div>
         
-        <section class="text-center mb-16">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-900 mb-6 tracking-tight">
-                מהפכת הבידוד: <span class="text-green-600">Aqua Plus Prins</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                הפתרון המתקדם בעולם לצנרת מיזוג אוויר עם בידוד מובנה מראש - ליעילות מקסימלית ואפס ליקויים.
-            </p>
-        </section>
-
-        <section class="mb-16">
-            <div class="bg-white p-4 rounded-3xl shadow-2xl border border-blue-50 max-w-2xl mx-auto">
-                <figure>
-                    <img src="pipe.jpg.jpg" 
-                         alt="צנרת PRINS של INTERPLAST" 
-                         onerror="this.src='https://via.placeholder.com/600x400?text=PRINS+Pipe'" 
-                         class="rounded-2xl w-full h-auto object-cover shadow-inner">
-                    <figcaption class="mt-6 text-center text-gray-600 italic text-lg border-t border-gray-100 pt-4">
-                        צנרת PPR מבודדת מראש מסדרת PRINS – מבנה אחיד המבטיח עד 70% חיסכון באנרגיה ומניעת עיבוי מוחלטת.
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="grid md:grid-cols-2 gap-8 mb-20">
-            <div class="bg-white p-8 rounded-3xl shadow-xl border-r-8 border-green-500">
-                <h3 class="text-2xl font-bold text-blue-900 mb-6 underline decoration-green-300 underline-offset-8">יתרונות הנדסיים</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-center space-x-3 space-x-reverse">
-                        <span class="bg-green-100 text-green-600 p-1 rounded-full text-sm">✔</span>
-                        <span class="text-lg font-medium">יעילות תרמית מוכחת (λ=0.028)</span>
-                    </li>
-                    <li class="flex items-center space-x-3 space-x-reverse">
-                        <span class="bg-green-100 text-green-600 p-1 rounded-full text-sm">✔</span>
-                        <span class="text-lg font-medium">שמירה על COP אופטימלי של הצ'ילר</span>
-                    </li>
-                    <li class="flex items-center space-x-3 space-x-reverse">
-                        <span class="bg-green-100 text-green-600 p-1 rounded-full text-sm">✔</span>
-                        <span class="text-lg font-medium">עמידות UV ל-50 שנה (ציפוי UPVC)</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 rounded-3xl shadow-xl border-r-8 border-blue-500">
-                <h3 class="text-2xl font-bold text-blue-900 mb-6 underline decoration-blue-300 underline-offset-8">ביצוע בשטח</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-center space-x-3 space-x-reverse">
-                        <span class="bg-blue-100 text-blue-600 p-1 rounded-full text-sm">✔</span>
-                        <span class="text-lg font-medium">חיסכון של 30-50% בזמן ההתקנה</span>
-                    </li>
-                    <li class="flex items-center space-x-3 space-x-reverse">
-                        <span class="bg-blue-100 text-blue-600 p-1 rounded-full text-sm">✔</span>
-                        <span class="text-lg font-medium">עמידה מלאה בתקן ת"י 921</span>
-                    </li>
-                    <li class="flex items-center space-x-3 space-x-reverse">
-                        <span class="bg-blue-100 text-blue-600 p-1 rounded-full text-sm">✔</span>
-                        <span class="text-lg font-medium">מניעת עיבוי, עובש ופטריות</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-blue-900 rounded-[3rem] p-12 text-center text-white shadow-2xl overflow-hidden relative">
-            <div class="relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">מוכנים לתכנן את הפרויקט הבא?</h2>
-                <p class="text-xl opacity-80 mb-10 max-w-xl mx-auto">צרו קשר עם מומחי קבוצת פולק לניתוח ROI וייעוץ טכני מלא.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-eco-green text-white px-3 py-1 rounded-full text-sm font-semibold mb-6">
+                        <i data-lucide="leaf" class="w-4 h-4"></i>
+                        <span>מוצר ירוק מאושר</span>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
+                        הדור הבא של מערכות ה-HVAC: <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-l from-green-300 to-green-500">מקסימום דירוג ירוק, אפס פשרות בבטיחות אש.</span>
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8 max-w-2xl leading-relaxed">
+                        מערכת צנרת PPR-CT מבודדת מראש (Pre-insulated) מבית INTERPLAST. הפתרון ההנדסי השלם המעניק ניקוד מירבי בתקני ת"י 5281 ו-LEED, תוך צמצום דרמטי של פליטות ועמידה מחמירה בתקן אש (B-s2,d0).
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-eco-green hover:bg-green-600 text-white px-8 py-3 rounded text-lg font-semibold transition-colors flex items-center gap-2">
+                            <i data-lucide="calendar" class="w-5 h-5"></i>
+                            הזמינו Lunch & Learn
+                        </a>
+                        <a href="#specs" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-engineering-blue px-8 py-3 rounded text-lg font-semibold transition-colors">
+                            למפרט הטכני
+                        </a>
+                    </div>
+                </div>
                 
-                <div class="flex flex-col sm:flex-row justify-center gap-6">
-                    <a href="https://wa.me/972503330119" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-10 rounded-2xl transition-all shadow-lg text-xl">
-                        שיחה בוואטסאפ
-                    </a>
-                    <a href="mailto:pump@polak.co.il" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-5 px-10 rounded-2xl transition-all shadow-lg text-xl">
-                        שליחת מייל
-                    </a>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm border border-white/20 max-w-md w-full">
+                        <img src="pipe.jpg.jpg" alt="צנרת PRINS של INTERPLAST" onerror="this.src='https://via.placeholder.com/600x400?text=PRINS+Pipe'" class="rounded-lg w-full object-cover shadow-2xl">
+                    </div>
+                    <div class="mt-4 text-center text-sm font-medium text-blue-100 max-w-sm italic">
+                        צנרת PPR מבודדת מראש מסדרת PRINS – מבנה אחיד המבטיח עד 70% חיסכון באנרגיה ומניעת עיבוי מוחלטת.
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="py-12 text-center text-gray-500 text-sm">
-        <div class="max-w-4xl mx-auto border-t border-blue-100 pt-8">
-            <p>© 2026 קבוצת פולק - מפיצים רשמיים Interplast יוון</p>
-            <p class="mt-2 text-blue-900 font-semibold tracking-widest uppercase">Pioneering HVAC Solutions</p>
         </div>
-    </footer>
+    </section>
 
-</body>
-</html>
+    <section class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">האתגרים של יועצי הקיימות והפתרון ההנדסי</h2>
+                <div class="h-1 w-20 bg-eco-green mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-tech-gray p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow tech-border">
+                    <div class="bg-engineering-blue text-white w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="zap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">יעילות תרמית חסרת פשרות</h3>
+                    <ul class="text-gray-700 space-y-2 list-disc list-inside">
+                        <li>בידוד פוליאוריטן (PU) קשיח בהזרקה.</li>
+                        <li>מקדם מוליכות תרמית נמוך במיוחד: <span dir="ltr" class="font-mono text-engineering-blue font-bold inline-block px-1 bg-white rounded">λ ≈ 0.021 W/mK</span>.</li>
+                        <li>ביטול מוחלט של "כיסי אוויר" וגשרי קור האופייניים לבידוד ידני באתר.</li>
+                        <li>חיסכון של עד 70% באובדן חום (בהשוואה לצנרת מתכת מסורתית).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-tech-gray p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow tech-border" style="border-right-color: #f97316;">
+                    <div class="bg-alert-orange text-white w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="flame" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">פתרון לקונפליקט ת"י 755</h3>
+                    <ul class="text-gray-700 space-y-2 list-disc list-inside">
+                        <li>מעטפת UPVC כבה מאליה.</li>
+                        <li>סיווג אש מחמיר: <span class="font-bold">B-s2,d0</span>.</li>
+                        <li>התקנה בתוך המבנה ללא צורך בצבעים תופחים או חומרי מיגון אש משניים.</li>
+                        <li>צמצום משמעותי של האנרגיה הגלומה (Embodied Carbon) הכרוכה בחומרי מיגון עזר.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-tech-gray p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow tech-border" style="border-right-color: #0ea5e9;">
+                    <div class="bg-sky-500 text-white w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="droplets" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">איכות סביבה ואוויר (IAQ)</h3>
+                    <ul class="text-gray-700 space-y-2 list-disc list-inside">
+                        <li>מערכת סגורה והרמטית המונעת לחלוטין עיבוי (Condensation).</li>
+                        <li>מניעת התפתחות עובש ובקטריות בחללי המבנה.</li>
+                        <li>פסולת אתר אפסית (Zero Site Waste) - ללא שאריות דבקים או ספוגים מזהמים.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">מבנה טכנולוגי (חתך צינור)</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        מערכת ה-Prins מיוצרת בתהליך תעשייתי רובוטי המבטיח אחידות חומרים ורמות בידוד שאינן ניתנות להשגה בביצוע ידני באתר הבנייה.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-white border border-gray-300 shadow-sm flex items-center justify-center text-xl font-bold text-gray-400 shrink-0">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Mantle (מעטפת חיצונית)</h4>
+                                <p class="text-gray-600">מעטפת UPVC קשיחה. מעניקה הגנה מכנית מקסימלית ועמידות אש ברמה של B-s2,d0.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-yellow-100 border border-yellow-300 shadow-sm flex items-center justify-center text-xl font-bold text-yellow-600 shrink-0">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Insulation (שכבת הבידוד)</h4>
+                                <p class="text-gray-600">קצף פוליאוריטן (PU) מוזרק בלחץ. עוטף בשלמות את צינור השירות ומונע לחלוטין איבודי חום וגשרי קור.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-pipe-green border border-green-700 shadow-sm flex items-center justify-center text-xl font-bold text-white shrink-0">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Service pipe (צינור השירות)</h4>
+                                <p class="text-gray-600">צינור PPR-CT פוליפרופילן איכותי. עמיד בלחצים גבוהים, אינו מחליד, ומבטיח זרימה חלקה (חיכוך מינימלי) לאורך עשרות שנים.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class
